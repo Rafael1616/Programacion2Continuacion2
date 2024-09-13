@@ -8,3 +8,6 @@ C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\
 C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.CoreCompileInputs.cache
 C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.exe
 C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.pdb
+C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\bin\Debug\AccesoDatos.dll
+C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\bin\Debug\AccesoDatos.pdb
+C:\Users\MINEDUCYT\Desktop\Continuacion Guias\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesc.ABCBD388.Up2Date
