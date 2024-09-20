@@ -53,10 +53,7 @@ namespace CapaDesconectada
                 Address = tboxAddres.Text,
             };
             MessageBox.Show(cliente.CustomerID);
-            MessageBox.Show(cliente.CompanyName);
-            MessageBox.Show(cliente.ContactName);
-            MessageBox.Show(cliente.ContactTitle);
-            MessageBox.Show(cliente.Address);
+            MessageBox.Show(cliente.CompanyName, "Ingresar");
             return cliente;
         }
         #endregion
@@ -78,6 +75,13 @@ namespace CapaDesconectada
                 var encontradot = objeto1.CompanyName;
                 tboxEncontradoT.Text = encontradot;
             }
+        }
+
+        private void btnInsertarT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            int insertados = customerRepository.InsertarCliente(cliente);
+            MessageBox.Show($"{insertados} registrados");
         }
         #endregion
 

@@ -53,6 +53,7 @@
             this.tboxContactTitle = new System.Windows.Forms.TextBox();
             this.tboxAddres = new System.Windows.Forms.TextBox();
             this.btnInsertarCliente = new System.Windows.Forms.Button();
+            this.btnInsertarT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -127,6 +128,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnInsertarT);
             this.groupBox2.Controls.Add(this.tboxEncontradoT);
             this.groupBox2.Controls.Add(this.btnObtenerTipado);
             this.groupBox2.Controls.Add(this.label2);
@@ -281,6 +283,16 @@
             this.btnInsertarCliente.UseVisualStyleBackColor = true;
             this.btnInsertarCliente.Click += new System.EventHandler(this.btnInsertarCliente_Click);
             // 
+            // btnInsertarT
+            // 
+            this.btnInsertarT.Location = new System.Drawing.Point(260, 447);
+            this.btnInsertarT.Name = "btnInsertarT";
+            this.btnInsertarT.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertarT.TabIndex = 7;
+            this.btnInsertarT.Text = "Enviar";
+            this.btnInsertarT.UseVisualStyleBackColor = true;
+            this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +351,7 @@
         private System.Windows.Forms.TextBox tboxContactTitle;
         private System.Windows.Forms.TextBox tboxAddres;
         private System.Windows.Forms.Button btnInsertarCliente;
+        private System.Windows.Forms.Button btnInsertarT;
     }
 }
 
