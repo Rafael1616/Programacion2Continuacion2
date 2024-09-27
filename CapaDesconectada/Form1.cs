@@ -103,6 +103,7 @@ namespace CapaDesconectada
             var customers = adaptador.GetData();
             gridTipado.DataSource = customers;
         }
+
         private void btnBuscarTipado_Click(object sender, EventArgs e)
         {
             var customer = adaptador.GetDataBy(tboxBuscarTipado.Text);
@@ -110,8 +111,8 @@ namespace CapaDesconectada
             {
                 var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
 
-                var encontradot = objeto1.CompanyName;
-                tboxEncontradoT.Text = encontradot;
+                RellenarForm(objeto1);
+                Console.WriteLine(customer);
             }
         }
 
@@ -121,6 +122,41 @@ namespace CapaDesconectada
             int insertados = customerRepository.InsertarCliente(cliente);
             MessageBox.Show($"{insertados} registrados");
         }
+
+        private void btnActualizarT_Click(object sender, EventArgs e)
+        {
+            var fila = adaptador.GetDataBy(tboxCustomerID.Text);
+
+            if (fila != null)
+            {
+                var datoOriginal = customerRepository.ExtraerInformacionCliente(fila);
+                var datosModificados = CrearCliente();
+                adaptador.Update(
+                 datosModificados.CustomerID,
+                 datosModificados.CompanyName,
+                 datosModificados.ContactName,
+                 datosModificados.ContactTitle,
+                 datosModificados.Address,
+                 datosModificados.City,
+                 datosModificados.Region,
+                 datosModificados.PostalCode,
+                 datosModificados.Country,
+                 datosModificados.Phone,
+                 datosModificados.Fax,
+                 datoOriginal.CustomerID,
+                 datoOriginal.CompanyName,
+                 datoOriginal.ContactName,
+                 datoOriginal.ContactTitle,
+                 datoOriginal.Address,
+                 datoOriginal.City,
+                 datoOriginal.Region,
+                 datoOriginal.PostalCode,
+                 datoOriginal.Country,
+                 datoOriginal.Phone,
+                 datoOriginal.Fax
+                 );
+            }
+        }
         #endregion
 
         private void btnActualizarNT_Click(object sender, EventArgs e)
@@ -129,5 +165,6 @@ namespace CapaDesconectada
             var actulaizadas = customerRepository.ActualizarCliente(cliente);
             MessageBox.Show($"{actulaizadas} filas actualizadas");
         }
+
     }
 }
