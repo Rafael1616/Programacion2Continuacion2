@@ -54,6 +54,7 @@
             this.tboxAddres = new System.Windows.Forms.TextBox();
             this.btnInsertarCliente = new System.Windows.Forms.Button();
             this.btnInsertarT = new System.Windows.Forms.Button();
+            this.btnActualizarNT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNotipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizarNT);
             this.groupBox1.Controls.Add(this.tbEncontrado);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnBuscarNt);
@@ -93,7 +95,7 @@
             // 
             // btnBuscarNt
             // 
-            this.btnBuscarNt.Location = new System.Drawing.Point(114, 447);
+            this.btnBuscarNt.Location = new System.Drawing.Point(106, 447);
             this.btnBuscarNt.Name = "btnBuscarNt";
             this.btnBuscarNt.Size = new System.Drawing.Size(113, 23);
             this.btnBuscarNt.TabIndex = 4;
@@ -293,6 +295,16 @@
             this.btnInsertarT.UseVisualStyleBackColor = true;
             this.btnInsertarT.Click += new System.EventHandler(this.btnInsertarT_Click);
             // 
+            // btnActualizarNT
+            // 
+            this.btnActualizarNT.Location = new System.Drawing.Point(244, 447);
+            this.btnActualizarNT.Name = "btnActualizarNT";
+            this.btnActualizarNT.Size = new System.Drawing.Size(92, 23);
+            this.btnActualizarNT.TabIndex = 11;
+            this.btnActualizarNT.Text = "Actualizar";
+            this.btnActualizarNT.UseVisualStyleBackColor = true;
+            this.btnActualizarNT.Click += new System.EventHandler(this.btnActualizarNT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +364,7 @@
         private System.Windows.Forms.TextBox tboxAddres;
         private System.Windows.Forms.Button btnInsertarCliente;
         private System.Windows.Forms.Button btnInsertarT;
+        private System.Windows.Forms.Button btnActualizarNT;
     }
 }
 
